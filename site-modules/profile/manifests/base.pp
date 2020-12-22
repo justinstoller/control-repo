@@ -1,5 +1,7 @@
-class profile::base {
+class profile::base(
+  $message = "The Default Message"
+) {
 
-  #the base profile should include component modules that will be on all nodes
+  notify { $message: }
 
 }
