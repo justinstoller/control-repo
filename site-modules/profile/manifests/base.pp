@@ -3,5 +3,6 @@ class profile::base(
 ) {
 
   notify { $message: }
+  notify { "Foo": }
 
 }
