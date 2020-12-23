@@ -26,6 +26,16 @@ File { backup => false }
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
 node default {
   
+  concat { '/tmp/file':
+    ensure => present,
+  }
+
+  concat::fragment { 'tmpfile':
+    target  => '/tmp/file',
+    content => 'test contents',
+    order   => '01'
+  }
+
   include profile::base
 
   # This is where you can declare classes for all nodes.
