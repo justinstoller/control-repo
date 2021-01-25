@@ -16,6 +16,8 @@ mod 'puppetlabs-translate', '2.2.0'
 mod 'puppetlabs-apt', '7.7.0'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 
+mod 'puppet-gitlab', '6.0.1'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
