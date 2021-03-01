@@ -26,4 +26,4 @@ mod 'puppet-gitlab', '6.0.1'
 
 mod 'apache',
   git:    'https://github.com/puppetlabs/puppetlabs-apache',
-  branch: 'main'
+  commit: 'cf11fa7e5b7035e50a2738745b39ea6406945363'
