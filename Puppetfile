@@ -13,7 +13,7 @@ mod 'puppetlabs-docker', '4.0.1'
 mod 'puppetlabs-hocon', '1.1.0'
 mod 'puppetlabs-concat', '7.0.2'
 mod 'puppetlabs-translate', '2.2.0'
-mod 'puppetlabs-apt', '8.0.2'
+mod 'puppetlabs-apt', '8.3.0'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 
 mod 'puppet-gitlab', '8.0.0'
