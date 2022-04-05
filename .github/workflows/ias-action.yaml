@@ -1,0 +1,13 @@
+on:
+  - pull_request
+jobs:
+  ias:
+    runs-on: ubuntu-latest
+    name: A job to trigger impact analysis
+    steps:
+      - name: ias-action
+        id: ias-action
+        uses: puppetlabs/ias-action@v2
+        env:
+          TOKEN: ${{ secrets.TOKEN }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
