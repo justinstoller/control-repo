@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: ias-action
         id: ias-action
-        uses: puppetlabs/ias-action@v2
+        uses: puppetlabs/ias-action@v2.1-alpha1
         env:
           TOKEN: ${{ secrets.TOKEN }}
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
