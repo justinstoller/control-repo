@@ -24,12 +24,21 @@ File { backup => false }
 # Puppet Enterprise console and External Node Classifiers (ENC's).
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
+
+class foo(
+  $message = "",
+) {
+  notify { "Notify Foo":
+    message => $message,
+  }
+}
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  notify { "I'm another catalog change": }
+  notify { "I'm still another catalog change": }
   notify { "Notify 1":
-    message => "The original parameter value",
+    message => "The new parameter value",
   }
+  include foo
 }
