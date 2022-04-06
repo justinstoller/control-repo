@@ -28,5 +28,8 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
-  notify { "I'm a catalog change": }
+  notify { "I'm another catalog change": }
+  notify { "Notify 1":
+    message => "The original parameter value",
+  }
 }
