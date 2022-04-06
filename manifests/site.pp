@@ -37,8 +37,5 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "I'm still another catalog change": }
-  notify { "Notify 1":
-    message => "The new parameter value",
-  }
   include foo
 }
