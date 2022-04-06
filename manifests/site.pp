@@ -29,4 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "I'm another catalog change": }
+  notify { "Notify 1":
+    message => "The original parameter value",
+  }
 }
