@@ -1,2 +1,2 @@
 ---
-foo::message: "This node is using common data"
+foo::message: "This node is using hiera data"
