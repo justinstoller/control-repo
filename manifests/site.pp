@@ -32,9 +32,10 @@ class foo(
     message => $message,
   }
 }
-node default {
-  include foo
-}
+
+include foo
+
+node default { }
 
 node /^(chunky-borrower)|(mock-booklet)|(unruly-closure).*/ {
   include profile::foo
