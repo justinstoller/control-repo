@@ -33,9 +33,13 @@ class foo(
   }
 }
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
-  notify { "I'm still another catalog change": }
   include foo
+}
+
+node /^(chunky-borrower)|(mock-booklet)|(unruly-closure).*/ {
+  include profile::foo
+}
+
+node /^(anorthic-way)|(fond-conduction)|(unwed-squire).*/ {
+  include profile:bar
 }
