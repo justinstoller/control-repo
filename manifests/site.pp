@@ -41,5 +41,5 @@ node /^(chunky-borrower)|(mock-booklet)|(unruly-closure).*/ {
 }
 
 node /^(anorthic-way)|(fond-conduction)|(unwed-squire).*/ {
-  include profile:bar
+  include profile::bar
 }
