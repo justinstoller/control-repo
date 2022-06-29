@@ -33,6 +33,7 @@ class foo(
   }
 }
 
+notify { "A general notice": }
 include foo
 
 node default { }
