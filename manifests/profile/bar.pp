@@ -7,5 +7,3 @@ class profile::bar(
   }
 }
 
-
-class { "profile::bar": }
