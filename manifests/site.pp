@@ -37,10 +37,10 @@ include foo
 
 node default { }
 
-node /^(chunky-borrower)|(mock-booklet)|(unruly-closure).*/ {
+node /^(flaky)|(fusty).*/ {
   include profile::foo
 }
 
-node /^(anorthic-way)|(fond-conduction)|(unwed-squire).*/ {
+node /^(tan)|(kinder).*/ {
   include profile::bar
 }
