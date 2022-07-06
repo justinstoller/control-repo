@@ -43,4 +43,6 @@ node /^(flaky)|(fusty).*/ {
 
 node /^(tan)|(kinder).*/ {
   include profile::bar
+  include apache
 }
+
