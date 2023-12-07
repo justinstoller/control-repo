@@ -18,6 +18,10 @@ mod 'puppetlabs-cd4pe_jobs', '1.5.0'
 
 mod 'puppet-gitlab', '8.0.0'
 
+mod 'grafanadash',
+  git: 'https://github.com/justinstoller/puppetlabs-grafanadash',
+  branch: 'main'
+
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
 #mod 'apache',
