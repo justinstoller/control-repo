@@ -8,7 +8,7 @@ plan adhoc::file_apply(
 
   $results = apply($targets) {
     file { "my little file":
-      ensure  => 'file',
+      ensure  => 'present',
       content => $content,
       path    => $path,
     }
