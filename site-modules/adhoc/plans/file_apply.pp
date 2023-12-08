@@ -1,16 +1,16 @@
 plan adhoc::file_apply(
   TargetSpec $targets,
   String     $content  = "This is some simple content",
-  String     $filepath = "/tmp/orchestrator-file-apply",
+  String     $path = "/tmp/orchestrator-file-apply",
 ) {
 
-  $targets.apply_prep
+  #$targets.apply_prep
 
   $results = apply($targets) {
     file { "my little file":
       ensure  => 'present',
       content => $content,
-      path    => $filepath,
+      path    => $path,
     }
   }
 
