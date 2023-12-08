@@ -1,7 +1,7 @@
 plan adhoc::file_apply(
   TargetSpec $targets,
-  String     $content = "This is some simple content",
-  String     $path    = "/tmp/orchestrator-file-apply",
+  String     $content  = "This is some simple content",
+  String     $filepath = "/tmp/orchestrator-file-apply",
 ) {
 
   $targets.apply_prep
@@ -10,7 +10,7 @@ plan adhoc::file_apply(
     file { "my little file":
       ensure  => 'present',
       content => $content,
-      path    => $path,
+      path    => $filepath,
     }
   }
 
