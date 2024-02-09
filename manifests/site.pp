@@ -33,7 +33,16 @@ class foo(
   }
 }
 
+class bar(
+  $message = "bar",
+) {
+  notify { "Notify Bar":
+    message => $message,
+  }
+}
+
 include foo
+include bar
 
 node default { }
 
