@@ -4,7 +4,7 @@
 mod 'puppetlabs/inifile', '5.2.0'
 #mod 'puppetlabs/stdlib',  '6.0.0'
 #mod 'puppetlabs/concat',  '6.0.0'
-mod 'puppetlabs-stdlib', 2.0.0
+mod 'puppetlabs-stdlib', '2.0.0'
 
 mod 'puppetlabs-cd4pe', '2.0.2'
 mod 'puppetlabs-stdlib', '7.1.0'
