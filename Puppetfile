@@ -25,7 +25,7 @@ mod 'puppet-gitlab', '8.0.0'
 
 mod 'grafanadash',
   git: 'https://github.com/justinstoller/puppetlabs-grafanadash',
-  branch: 'main'
+  tag: '0.0.5'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
