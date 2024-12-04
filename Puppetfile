@@ -1,16 +1,22 @@
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
-mod 'puppetlabs/inifile', '5.2.0'
+mod 'inifile',
+  git: 'https://github.com/puppetlabs/puppetlabs-inifile', 
+  tag: 'v6.1.0'
 #mod 'puppetlabs/stdlib',  '6.0.0'
 #mod 'puppetlabs/concat',  '6.0.0'
 
 mod 'puppetlabs-cd4pe', '2.0.2'
-mod 'puppetlabs-stdlib', '7.1.0'
+mod 'stdlib',
+  git: 'https://github.com/puppetlabs/puppetlabs-stdlib',
+  tag: 'v9.5.0'
 mod 'puppetlabs-puppet_authorization', '0.5.1'
 mod 'puppetlabs-docker', '4.0.1'
 mod 'puppetlabs-hocon', '1.1.0'
-mod 'puppetlabs-concat', '7.0.2'
+mod 'concat',
+  git: 'https://github.com/puppetlabs/puppetlabs-concat',
+  tag: 'v8.0.1'
 mod 'puppetlabs-translate', '2.2.0'
 mod 'puppetlabs-apt', '8.3.0'
 mod 'puppetlabs-cd4pe_jobs', '1.5.0'
